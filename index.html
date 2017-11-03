@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icons-extra.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">主页</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-content-padded">
+			<div class="mui-input-row mui-search">
+		    	<input type="search"  class='mui-input-clear' placeholder="输入搜索的内容"/>
+		    </div>
+		</div>
+		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			<div class="mui-scroll">
+				<a class="mui-control-item mui-active">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+				<a class="mui-control-item">
+					推荐
+				</a>
+			</div>
+			
+		</div>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/yuantiao.jpg" alt="" />
+					</a>
+				</div>
+				
+				<!--第一张-->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/cbd.jpg" alt="" />
+					</a>
+				</div>
+				
+				<!--第二张-->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/muwu.jpg" alt="" />
+					</a>
+				</div>
+				
+				<!--第三张-->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/shuijiao.jpg" alt="" />
+					</a>
+				</div>
+				
+				<!--第四张-->
+				<div class="mui-slider-item">
+					<a href="#"><img src="images/yuantiao.jpg" alt="" /></a>
+				</div>
+				
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/cbd.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+	</div>
+	
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-list"></span>
+	        <span class="mui-tab-label">分类</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+	        <span class="mui-tab-label">购物车</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-person"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+</body>
+</html>
