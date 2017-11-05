@@ -1,125 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/icons-extra.css" />
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
-</head>
-<body>
-	<header class="mui-bar mui-bar-nav">
-	    <h1 class="mui-title">主页</h1>
-	</header>
-	<div class="mui-content">
-		<div class="mui-content-padded">
-			<div class="mui-input-row mui-search">
-		    	<input type="search"  class='mui-input-clear' placeholder="输入搜索的内容"/>
-		    </div>
-		</div>
-		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-			<div class="mui-scroll">
-				<a class="mui-control-item mui-active">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-				<a class="mui-control-item">
-					推荐
-				</a>
-			</div>
-			
-		</div>
-		<div id="slider" class="mui-slider">
-			<div class="mui-slider-group mui-slider-loop">
-				
-				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="images/yuantiao.jpg" alt="" />
-					</a>
-				</div>
-				
-				<!--第一张-->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/cbd.jpg" alt="" />
-					</a>
-				</div>
-				
-				<!--第二张-->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/muwu.jpg" alt="" />
-					</a>
-				</div>
-				
-				<!--第三张-->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/shuijiao.jpg" alt="" />
-					</a>
-				</div>
-				
-				<!--第四张-->
-				<div class="mui-slider-item">
-					<a href="#"><img src="images/yuantiao.jpg" alt="" /></a>
-				</div>
-				
-				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/cbd.jpg" alt="" />
-					</a>
-				</div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
-		</div>
-	</div>
-	
-	<nav class="mui-bar mui-bar-tab">
-	    <a class="mui-tab-item mui-active">
-	        <span class="mui-icon mui-icon-home"></span>
-	        <span class="mui-tab-label">首页</span>
-	    </a>
-	    <a class="mui-tab-item">
-	        <span class="mui-icon mui-icon-list"></span>
-	        <span class="mui-tab-label">分类</span>
-	    </a>
-	    <a class="mui-tab-item">
-	        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
-	        <span class="mui-tab-label">购物车</span>
-	    </a>
-	    <a class="mui-tab-item">
-	        <span class="mui-icon mui-icon-person"></span>
-	        <span class="mui-tab-label">我的</span>
-	    </a>
-	</nav>
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icons-extra.css" />
+	</head>
+
+	<body>
+
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="pages/main.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="pages/list.html">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a class="mui-tab-item" href="pages/car.html">
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item" href="pages/my.html">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+
+		<script>
+			//mui初始化
+			mui.init();
+			var subpages = ['pages/main.html', 'pages/list.html', 'car/main.html', 'pages/my.html'];
+			var subpage_style = {
+				top: '0px',
+				bottom: '51px'
+			};
+
+			var aniShow = {};
+
+			//创建子页面，首个选项卡页面显示，其它均隐藏；
+			mui.plusReady(function() {
+				var self = plus.webview.currentWebview();
+				for(var i = 0; i < subpages.length; i++) {
+					var temp = {};
+					var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
+					if(i > 0) {
+						sub.hide();
+					} else {
+						temp[subpages[i]] = "true";
+						mui.extend(aniShow, temp);
+					}
+					self.append(sub);
+				}
+			});
+			//当前激活选项
+			var activeTab = subpages[0];
+
+			//选项卡点击事件
+			mui('.mui-bar-tab').on('tap', 'a', function(e) {
+				var targetTab = this.getAttribute('href');
+				if(targetTab == activeTab) {
+					return;
+				}
+				//显示目标选项卡
+				//若为iOS平台或非首次显示，则直接显示
+				if(mui.os.ios || aniShow[targetTab]) {
+					plus.webview.show(targetTab);
+				} else {
+					//否则，使用fade-in动画，且保存变量
+					var temp = {};
+					temp[targetTab] = "true";
+					mui.extend(aniShow, temp);
+					plus.webview.show(targetTab, "fade-in", 300);
+				}
+				//隐藏当前;
+				plus.webview.hide(activeTab);
+				//更改当前活跃的选项卡
+				activeTab = targetTab;
+			});
+			//自定义事件，模拟点击“首页选项卡”
+			document.addEventListener('gohome', function() {
+				var defaultTab = document.getElementById("defaultTab");
+				//模拟首页点击
+				mui.trigger(defaultTab, 'tap');
+				//切换选项卡高亮
+				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+				if(defaultTab !== current) {
+					current.classList.remove('mui-active');
+					defaultTab.classList.add('mui-active');
+				}
+			});
+		</script>
+	</body>
+
 </html>

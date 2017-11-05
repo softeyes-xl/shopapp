@@ -1,0 +1,46 @@
+{
+	"index.html": {
+		"resources": [
+			"images/cbd.jpg",
+			"fonts/mui-icons-extra.ttf",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/shuijiao.jpg",
+			"css/style.css",
+			"css/icons-extra.css",
+			"pages/main.html"
+		],
+		"refer": [
+			"pages/list.html",
+			"pages/my.html",
+			"pages/main.html"
+		]
+	},
+	"pages/main.html": {
+		"resources": [
+			"css/mui.min.css",
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"images/shuijiao.jpg",
+			"css/style.css"
+		]
+	},
+	"pages/list.html": {
+		"resources": [
+			"css/mui.min.css",
+			"css/list.css"
+		]
+	},
+	"pages/my.html": {
+		"resources": [
+			"css/mui.min.css",
+			"images/login.jpg",
+			"css/my.css",
+			"js/mui.min.js"
+		]
+	}
+}

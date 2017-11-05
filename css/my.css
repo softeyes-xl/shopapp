@@ -1,0 +1,91 @@
+.bg-color {
+	background: red;
+}
+
+.bg-color h1 {
+	color: #fff;
+}
+
+.mui-content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*登录*/
+.login-a img {
+	width: 150px;
+	height: 150px;
+	margin: 50px auto;
+	border-radius: 10px;
+	display: block;
+}
+
+.login-b-b {
+	background: #fff;
+	height: 40px;
+	overflow: hidden;
+	border-bottom: 1px solid #f0f0f0;	
+}
+
+.yzm {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 5px 10px;
+	border: 1px solid #f0f0f0;
+	font-size: 13px;
+	color: red;
+}
+
+.login-b-b-left {
+	width: 20%;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	border-right: 1px solid #f0f0f0;
+}
+
+.login-b-b-right {
+	float: left;
+	width: 80%;
+	position: relative;
+}
+
+.login-b-b-right input {
+	border-radius: 0;
+	border: 0;
+	height: 40px;
+}
+
+.btn button {
+	width: 100%;
+	margin: 10px auto 10px;
+	display: block;
+	background: skyblue;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.btn p {
+	width: 95%;
+	margin: 0 auto
+}
+
+.btn p a {
+	color: #888;
+	font-size: 15px;
+}
+
+.sdk-a {
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.sdk-a a {
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	color: #000;
+}

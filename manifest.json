@@ -189,5 +189,66 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"images/cbd.jpg",
+					"fonts/mui-icons-extra.ttf",
+					"images/muwu.jpg",
+					"images/yuantiao.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"images/shuijiao.jpg",
+					"css/style.css",
+					"css/icons-extra.css",
+					"pages/main.html"
+				],
+				"refer": [
+					"pages/list.html",
+					"pages/my.html"
+				],
+				"priority": 0
+			},
+			"pages/main.html": {
+				"resources": [
+					"css/mui.min.css",
+					"images/cbd.jpg",
+					"images/muwu.jpg",
+					"images/yuantiao.jpg",
+					"images/shuijiao.jpg",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pages/list.html": {
+				"resources": [
+					"css/mui.min.css",
+					"css/list.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pages/my.html": {
+				"resources": [
+					"css/mui.min.css",
+					"images/login.jpg",
+					"css/my.css",
+					"js/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"pages/car.html",
+				"js/mui.js",
+				"css/mui.css"
+			]
+		}
 	}
 }
